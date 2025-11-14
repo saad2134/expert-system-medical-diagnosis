@@ -8,7 +8,7 @@ df = pd.read_excel("questions.xlsx", engine="openpyxl")
 qa_dict = dict(zip(df["Question"].str.lower(), df["Answer"]))  # Lowercase for case-insensitivity
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyBIlUKJg7sH_Fuc6iwyyPbVUtvI4wkDfdg")  # Replace with your API key
+genai.configure(api_key="")  # Replace with your API key
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Function to get chatbot response
